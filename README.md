@@ -1,1 +1,1 @@
-# Tast-7
+Add some media query styles to make the page responsive.

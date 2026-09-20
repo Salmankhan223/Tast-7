@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+
+}
+
+.username {
+    background-color: rgba(0, 255, 255, 0.206);
+    color: rgb(0, 170, 255);
+    border-radius: 20px;
+    padding: 20px 40px 20px 40px;
+    margin-top: 20px;
+    margin-right: 50px;
+
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul>li {
+
+    padding-top: 20px;
+    list-style: none;
+
+}
+
+ul>li>a {
+    color: rgb(11, 11, 11);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+
+}
+
+.leftHero {
+    width: 50vw;
+
+}
+
+.leftHero>h1 {
+    padding-left: 10vw;
+    width: 40vw;
+    font-size: 3rem;
+
+}
+
+.leftHero>h1>span {
+    color: rgb(0, 191, 255);
+}
+
+.leftHero>p {
+    padding-left: 10vw;
+    width: 40vw;
+}
+
+.leftHero>button {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 25px;
+    background-color: rgb(0, 123, 255);
+    color: white;
+    font-weight: bold;
+    margin-top: 2vw;
+    margin-left: 10vw;
+
+}
+
+.rightHero {
+    width: 50vw;
+
+}
+
+
+@media (width<1100px) {
+    .logo {
+        font-size: 20px;
+        margin: 30px;
+
+    }
+
+    .username {
+        margin-right: 30px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    ul>li>a {
+        font-size: 13px;
+        font-weight: lighter;
+    }
+
+    .leftHero>h1 {
+        font-size: 1.9rem;
+    }
+
+    .leftHero>p {
+        font-size: 12px;
+    }
+
+    .rightHero>img {
+        width: 40vw;
+    }
+}
+
+@media (width<=600px) {
+    nav>ul {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+
+    }
+
+    .leftHero {
+        width: 100vw;
+    }
+
+    .leftHero>h1 {
+        width: 100vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .leftHero>p {
+        width: 100vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .leftHero>button{
+        margin: 7vw;
+        padding: 20px 60px ;
+
+        
+    }
+
+
+    .rightHero {
+        width: 100vw;
+    }
+
+    .rightHero>img {
+        width: 100vw;
+    }
+}
